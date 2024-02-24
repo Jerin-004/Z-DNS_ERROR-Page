@@ -191,9 +191,9 @@ a.avatar img {
 </head>
 <div class="lock"></div>
 
-<div class="mainblock"><p >> <span>Blocked</span>: "<i>Access to this page is restricted</i>"</p>
+<div class="mainblock"><p >> <span>Blocked</span>, "<i>Access to this page is restricted at Karunya network</i>"</p>
 <p >>  <span>This incident has been recorded !</span></p>
-<p >> <span>Domain and Category</span>: [<b id="errorCause"></b>]</p>
+<p >> <span>For further info contact us</span>: <b>ctcsupport@karunya.edu</b></p>
 <!-- <p >> <span>SOME PAGES ON THIS SERVER THAT YOU DO HAVE PERMISSION TO ACCESS</span>: [<a href="/">Home Page</a>, <a href="/">About Us</a>, <a href="/">Contact Us</a>, <a href="/">Blog</a>...]</p><p>> <span>HAVE A NICE DAY SIR AXLEROD :-)</span></p> -->
 </div>
 
@@ -219,19 +219,4 @@ setTimeout(function() {
 },0);
 
 
-function getBlockedDomain() {
-        var url = window.location.href;
-        var domain = url.split('/')[2]; // Split by '/' and get the third element which is the domain
-        return domain;
-    }
-
-    // Function to populate error message with blocked domain
-    function populateErrorMessage() {
-        var domain = getBlockedDomain();
-        document.getElementById('errorCause').innerText = "Blocked domain: " + domain;
-    w
-    }
-
-    // Call the function to populate the error message
-    populateErrorMessage();
 </script>
